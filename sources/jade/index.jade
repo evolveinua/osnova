@@ -1,0 +1,204 @@
+extends includes/layout.jade
+
+block content
+  include includes/slider.jade
+  .container
+    .row.show-grid 
+      h2.text-center О нашей компании
+      p.text-center.show-grid  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo doloremque tenetur est. Labore veniam, porro illum cum quaerat, architecto, aspernatur commodi aperiam veritatis libero, magni nulla repellat laborum quo cupiditate.
+    .row.show-grid
+      .col-md-4 
+        .text-center
+          i.fa.fa-unlock-alt.fa-5x
+        p.text-center  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam earum ad fuga nemo accusantium
+      .col-md-4 
+        .text-center
+          i.fa.fa-key.fa-5x
+        p.text-center  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam earum ad fuga nemo accusantium, non 
+      .col-md-4 
+        .text-center
+          i.fa.fa-heart.fa-5x
+        p.text-center  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam earum ad fuga nemo accusantium, non autem
+    
+    .row.show-grid 
+      h2.text-center Наши представительства
+      p.text-center.show-grid  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo doloremque tenetur est. Labore veniam, porro illum cum quaerat, architecto, aspernatur commodi aperiam veritatis libero, magni nulla repellat laborum quo cupiditate.
+    .row.show-grid
+      .col-md-4 
+        .text-center
+          i.fa.fa-unlock-alt.fa-5x
+        h3.text-center Польша
+        p.text-center  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam earum ad fuga nemo accusantium
+      .col-md-4 
+        .text-center
+          i.fa.fa-key.fa-5x
+        h3.text-center Украина
+        p.text-center  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam earum ad fuga nemo accusantium, non 
+      .col-md-4 
+        .text-center
+          i.fa.fa-heart.fa-5x
+        h3.text-center Россия
+        p.text-center  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam earum ad fuga nemo accusantium, non autem
+        
+    
+    
+    .row.show-grid
+      .col-md-12.gray
+        h3 Акционные предложения
+          .pull-right(style = "display: none;")
+            i.fa.fa-arrow-left.col-md-5.control(aria-hidden='true', id='acii-slider-left')
+            i.fa.fa-arrow-right.col-md-5.control.col-md-offset-2(aria-hidden='true', id='acii-slider-right')
+    .row.super-row.show-grid
+      .acii-slider(id='acii-slider-main')
+        -'use strict';
+        - var arr = []
+        - for (var i=0; i < 3;i++) { arr.push('')}
+        each name in arr
+          .col-sm-4.col-md-4
+            .thumbnail
+              //- img.img-responsive(src="http://placehold.it/400x300", alt="product.title")
+              .caption.clearfix
+                h4 
+                  strong 
+                    a(href="acii_open.html") Заголовок Акции
+                h6 Дата публикации: 1.01.02
+                p.show-grid.clearfix  Лучше не перегружать страницу слайдерами и каруселями, иначе ее рендер на стороне клиента будет выглядеть неопрятно и заметно выстраиваться :с
+                .pull-left
+                  a.btn.btn-default(href="acii_open.html") Читать далее
+    div.row
+      div.col-md-6
+        strong
+          | Больше акционных предложений по ссылке: 
+        br
+        i 
+          | (Нажжмите на кнопку для перехода)
+      div.col-md-6
+        a.btn.btn-success(href='news.html', role='button' style = "width: 100%; margin-top: 0px; margin-bottom: 50px;") Смотреть все акции
+    
+    
+     
+    
+    .row.show-grid
+      .col-md-12.gray
+        h3 Хиты продаж
+          .pull-right(style = "display: none;")
+            i.fa.fa-arrow-left.col-md-5.control(aria-hidden='true', id='bottom-slider-left')
+            i.fa.fa-arrow-right.col-md-5.control.col-md-offset-2(aria-hidden='true', id='bottom-slider-right')
+    .super-row
+      .bottom-slider
+        -'use strict';
+        - var arr = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.jpg', '7.png', '8.png',]
+        
+        each name in arr
+          div
+            .col-sm-3.col-md-3.great-item-card
+              .thumbnail
+                .img_wrap
+                  img.img-responsive(src="product_img/" + name, alt="product.title")
+                .caption
+                  a(href="product.html")
+                    h4 
+                      strong Крутой замок
+                  h6 Крутая компания, Англия
+                  p Краткое описание товара, разные бла-бла-бла-бла
+                  .clearfix
+                    p.have-this(style = "margin-top: 10px; margin-bottom: 0px !important") 
+                      strong В наличии
+                    strong.price 2500 грн
+                    div.row(style = "margin-top: 8px")
+                      div.col-md-6
+                        strong 
+                        a.btn.btn-default.pull-left(href='product.html', role='button') Подробнее 
+                      div.col-md-6
+                        strong 
+                          a.btn.btn-primary.pull-right(href='cart.html', role='button') В Корзину 
+
+            
+    
+    div.row
+      div.col-md-6
+        strong
+          | Больше товаров по ссылке: 
+        br
+        i 
+          | (Нажжмите на кнопку для перехода)
+      div.col-md-6
+        a.btn.btn-success(href='news.html', role='button' style = "width: 100%; margin-top: 0px; margin-bottom: 50px;") Перейти в магазин
+    .row.show-grid
+      .col-md-12.gray
+        h3 Производители
+          .pull-right
+            i.fa.fa-arrow-left.col-md-5.control(aria-hidden='true', id='vendors-left')
+            i.fa.fa-arrow-right.col-md-5.control.col-md-offset-2(aria-hidden='true', id='vendors-right')
+    .super-row
+      .vendors(id='vendors').show-grid
+        .col-md-12.text-center
+          a(href="http://ya.ru" target = "_blank")
+            i.fa.fa-5x.fa-camera-retro(aria-hidden='true')
+        .col-md-12.text-center
+          a(href="http://ya.ru" target = "_blank")
+            i.fa.fa-5x.fa-camera-retro(aria-hidden='true')
+        .col-md-12.text-center
+          a(href="http://ya.ru" target = "_blank")
+            i.fa.fa-5x.fa-camera-retro(aria-hidden='true')
+        .col-md-12.text-center
+          a(href="http://ya.ru" target = "_blank")
+            i.fa.fa-5x.fa-camera-retro(aria-hidden='true')
+        .col-md-12.text-center
+          a(href="http://ya.ru" target = "_blank")
+            i.fa.fa-5x.fa-camera-retro(aria-hidden='true')
+        .col-md-12.text-center
+          a(href="http://ya.ru" target = "_blank")
+            i.fa.fa-5x.fa-camera-retro(aria-hidden='true')
+        .col-md-12.text-center
+          a(href="http://ya.ru" target = "_blank")
+            i.fa.fa-5x.fa-camera-retro(aria-hidden='true')
+        .col-md-12.text-center
+          a(href="http://ya.ru" target = "_blank")
+            i.fa.fa-5x.fa-camera-retro(aria-hidden='true')
+        .col-md-12.text-center
+          a(href="http://ya.ru" target = "_blank")
+            i.fa.fa-5x.fa-camera-retro(aria-hidden='true')
+        .col-md-12.text-center
+          a(href="http://ya.ru" target = "_blank")
+            i.fa.fa-5x.fa-camera-retro(aria-hidden='true')
+            
+    div.row
+      div.col-md-6
+        strong
+          | Вы можете скачать каталоги производителей здесь:  
+        br
+        i 
+          | (Нажжмите на кнопку для перехода)
+      div.col-md-6
+        a.btn.btn-success(href='docs.html', role='button' style = "width: 100%; margin-top: 0px; margin-bottom: 50px;") Перейти к каталогам производителей
+            
+    .row.show-grid
+      .col-md-12.gray
+        h3 Новости
+    .row.super-row.show-grid
+      -'use strict';
+      - var arr = []
+      - for (var i=0; i < 6;i++) { arr.push('')}
+      each name in arr
+        .col-sm-6.col-md-4
+          .thumbnail
+            //- img.img-responsive(src="http://placehold.it/400x300", alt="product.title")
+            .caption.clearfix
+              h4 
+                strong 
+                  a(href="news_open.html") Заголовок новости
+              h6 Дата публикации: 1.01.02
+              p.show-grid.clearfix  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, ex, alias! Voluptate, ipsa laboriosam ex illum saepe ducimus aperiam possimus excepturi, nihil atque dolorem molestiae aspernatur debitis, beatae! Veritatis, mollitia. 
+              .pull-left
+                a.btn.btn-default(href="news_open.html") Читать далее
+    div.row
+      div.col-md-6
+        strong
+          | Больше новостей по ссылке: 
+        br
+        i 
+          | (Нажжмите на кнопку для перехода)
+      div.col-md-6
+        a.btn.btn-success(href='news.html', role='button' style = "width: 100%; margin-top: 0px; margin-bottom: 50px;") Смотреть все новости
+

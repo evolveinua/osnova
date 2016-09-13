@@ -1,0 +1,42 @@
+.container-fluid
+  .row
+    .col-md-5.col-md-offset-1
+      h3 Подпишись!
+      h5 На последние новости и акционные предложения
+    h3.col-md-5
+      .row
+        .col-md-8.pull-left
+          input.form-control(type='email', placeholder='E-mail')
+        .pull-right
+           a.btn.btn-default(href='#', role='button') Подписаться
+  .row
+    .col-md-6
+      .row 
+        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d338651.7808910053!2d34.72017656116226!3d48.461958472777916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe303fd08468f%3A0xa1cf3d5f2c11aba!2z0JTQvdC10L_RgNC-0L_QtdGC0YDQvtCy0YHQuiwg0JTQvdC10L_RgNC-0L_QtdGC0YDQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1470744685513', width='100%', height='600', frameborder='0', style='border:0', allowfullscreen='') 
+    div(class='сol-md-6 col-md-offset-1 pull-left')
+      div.btn-group
+        button.btn.btn-degfault
+          | Польша
+        button.btn.btn-degfault
+          | Украина
+        button.btn.btn-degfault
+          | Россия
+      h1.super-row
+      p Украина, Харьков, улица Чего-то там, 5
+      p Тел. +38 052 34 213 11
+      p Mail pochta@gmail.com
+      h3 Обратная связь
+      form.clearfix
+        .form-group
+          input.form-control(type='text', placeholder='ФИО')
+        .form-group
+          input.form-control(type='email', placeholder='Email')
+        .form-group
+          textarea.form-control(rows='8', placeholder='Сообщение')
+        .pull-right
+          button.btn.btn-default(type='submit') Отправить
+      h3 Поделится сайтом в соцсетях
+      .text-left
+        i.fa.fa-facebook.social-link.pull-left.fa-3x.control
+        i.fa.fa-google.social-link.pull-left.fa-3x.control
+        i.fa.fa-linkedin.social-link.pull-left.fa-3x.control

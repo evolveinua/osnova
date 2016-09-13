@@ -1,0 +1,183 @@
+extends includes/layout.jade
+
+block content
+  .all-wrapped
+      div.wrap(style = "z-index: -9999")
+        
+        .col-md-12.gray(style = "margin-top: -20px; margin-bottom: 30px")#scrolled-filters
+          
+          .row
+            .col-md-1 
+              h4 Фильтр: 
+            
+            .col-md-2 
+              select.form-control
+                option(select='selected')  Производитель
+                - var vendors = ['EMKA','EMKA Fort','RZ','EURO Locks','Китай','OSKAR','DIRAK'];
+                  each vendor in vendors
+                    option= vendor
+            .col-md-2 
+              h4.text-center
+                label.checkbox-inline 
+                  input(type='checkbox', value='option1') 
+                  | Есть на складе
+            .col-md-2 
+              h4.text-center
+                label.checkbox-inline 
+                  input(type='checkbox', value='option1') 
+                  | Мастер система
+            .col-md-1.arowed
+              h4.text-center
+                span Цена
+                i.fa.fa-long-arrow-up(aria-hidden='true')
+            .col-md-2.arowed 
+              h4.text-center
+                span Новизна
+                i.fa.fa-long-arrow-up(aria-hidden='true') 
+            
+            
+            div.clearfix      
+          div.clearfix
+        div.clearfix
+        
+        div.col-md-12(style = "margin-top: 90px")
+
+          .row.super-row
+          -'use strict';
+          - var arr = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.jpg', '7.png', '8.png', '9.png', '10.png', '11.png', '12.jpg']
+          
+          each name in arr
+            .col-sm-6.col-md-3.great-item-card
+              .thumbnail
+                .img_wrap
+                  img(src="product_img/" + name, alt="product.title")
+                .caption
+                  a(href="product.html")
+                    h4 
+                      strong Крутой замок
+                  h6 Крутая компания, Англия
+                  p Краткое описание товара, разные бла-бла-бла-бла
+
+                  .clearfix
+                    div.row
+                      div.col-md-6
+                        p.have-this(style = "margin-top: 10px; margin-bottom: 0px !important") 
+                          strong В наличии
+                        strong.price 2500 грн
+                      div.col-md-6
+                        p.have-this.yellow(style = "margin-top: 10px; margin-bottom: 0px !important") 
+                          strong 
+                    div.row(style = "margin-top: 8px")
+                      div.col-md-6
+                        strong 
+                        a.btn.btn-default.pull-left(href='product.html', role='button') Подробнее 
+                      div.col-md-6
+                        strong 
+                          a.btn.btn-primary.pull-right(href='cart.html', role='button') В Корзину 
+
+              div.great-item-card-hovered    
+                .thumbnail
+                  .img_wrap
+                    img(src="product_img/" + name, alt="product.title")
+                  .caption
+                    a(href="product.html")
+                      h4 
+                        strong Крутой замок
+                    h6 Крутая компания, Англия
+                    p Расширенное описание товара, даже с характеристиками
+                    p
+                      strong 
+                        | Длина: 
+                      | 15 метров
+                    p
+                      strong 
+                        | Ширина: 
+                      | 3 метра
+
+                    p
+                      strong 
+                        | Вес: 
+                      | 5 кг
+                    .clearfix
+                      p.have-this(style = "margin-top: 10px; margin-bottom: 0px !important") 
+                        strong В наличии
+                      strong.price 2500 грн
+                      div.row(style = "margin-top: 8px")
+                        div.col-md-6
+                          strong 
+                          a.btn.btn-default.pull-left(href='product.html', role='button') Подробнее 
+                        div.col-md-6
+                          strong 
+                            a.btn.btn-primary.pull-right(href='cart.html', role='button') В Корзину 
+
+
+         
+
+          div.clearfix
+          .row
+            .nav.text-center
+              .pagination
+                li
+                  a(href="")
+                    span(aria-hidden="true") &laquo;
+                li
+                  a(href="") 1
+                li
+                  a(href="") 2
+                li
+                  a(href="") 3
+                li
+                  a(href="") 4
+                li
+                  a(href="") 
+                    span(aria-hidden="true") &raquo;
+
+          div.clearfix
+          
+          .container
+            .row.show-grid
+              .col-md-12.gray
+                h3 Просмотренные товары
+                  .pull-right
+                    i.fa.fa-arrow-left.col-md-5.control(aria-hidden='true', id='bottom-slider-left')
+                    i.fa.fa-arrow-right.col-md-5.control.col-md-offset-2(aria-hidden='true', id='bottom-slider-right')
+            .super-row
+              .bottom-slider(id='bottom-slider-main')
+                -'use strict';
+                - var arr = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.jpg', '7.png', '8.png', '9.png', '10.png', '11.png', '12.jpg']
+                
+                each name in arr
+                  div
+                    .col-sm-12.col-md-12.great-item-card
+                      .thumbnail
+                        .img_wrap
+                          img(src="product_img/" + name, alt="product.title")
+                        .caption
+                          a(href="product.html")
+                            h4 
+                              strong Крутой замок
+                          h6 Крутая компания, Англия
+                          p Краткое описание товара, разные бла-бла-бла-бла
+                          .clearfix
+                            p.have-this(style = "margin-top: 10px; margin-bottom: 0px !important") 
+                              strong В наличии
+                            strong.price 2500 грн
+                            div.row(style = "margin-top: 8px")
+                              div.col-md-6
+                                strong 
+                                a.btn.btn-default.pull-left(href='product.html', role='button') Подробнее 
+                              div.col-md-6
+                                strong 
+                                  a.btn.btn-primary.pull-right(href='cart.html', role='button') В Корзину 
+
+          div.clearfix
+          div.row.about-card(style = "margin-top: 75px; padding-left: 45px !important; padding-right: 45px !important;")
+            div.col-md-12
+              .row.show-grid 
+                h2.text-center Текст о компании
+                p.text-center.show-grid 
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo doloremque tenetur est. Labore veniam, porro illum cum quaerat, architecto, aspernatur commodi aperiam veritatis libero, magni nulla repellat laborum quo cupiditate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo doloremque tenetur est. Labore veniam, porro illum cum quaerat, architecto, aspernatur commodi aperiam veritatis libero, magni nulla repellat laborum quo cupiditate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo doloremque tenetur est. Labore veniam, porro illum cum quaerat, architecto, aspernatur commodi aperiam veritatis libero, magni nulla repellat laborum quo cupiditate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo doloremque tenetur est. Labore veniam, porro illum cum quaerat, architecto, aspernatur commodi aperiam veritatis libero, magni nulla repellat laborum quo cupiditate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo doloremque tenetur est. Labore veniam, porro illum cum quaerat, architecto, aspernatur commodi aperiam veritatis libero, magni nulla repellat laborum quo cupiditate.
+                      
+              
+
+

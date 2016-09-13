@@ -1,0 +1,29 @@
+.nav-categoryes#nav-categoryes(style = "z-index: 999999999")
+  h3.text-center Категории
+  ul.nav-categoryes__list.nav.nav-pills.nav-stacked
+    li#tree-cat
+      a(href = "#").nav-categoryes__link
+        | Замки для металической мебели
+        i.fa.fa-arrow-circle-down.pull-right
+      ul#cat-tree.nav-categoryes__list.nav.nav-pills.nav-stacked
+        li.nav-categoryes__item
+          a(href="shop.html").nav-categoryes__link
+            | Показать все товары
+        li.nav-categoryes__item
+          a(href="shop.html").nav-categoryes__link
+            | Подкатегория 1
+        li.nav-categoryes__item
+          a(href="shop.html").nav-categoryes__link
+            | Подкатегория 2
+        li.nav-categoryes__item
+          a(href="shop.html").nav-categoryes__link
+            | Подкатегория 3
+        li.nav-categoryes__item
+          a(href="shop.html").nav-categoryes__link
+            | Подкатегория n
+    -'use strict';
+    - var arr = ['Ключи','Почтовые замки','Поворотно прижимные замки','Мебельные замки','Замки для электрошкафов','Замки для архивных шкафов','Монетные замки','Сейфовые замки','Поворотные рукояти','Замки для стекла','Защелки','Петли','Ручки','Уплотнитель','Метизы']
+      each name in arr
+        li.nav-categoryes__item
+          a(href = "shop.html").nav-categoryes__link= name
+.overlay#overlay

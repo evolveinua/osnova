@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Основа-Маркет</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </head>
+  <body>
+    <div id="nav-categoryes" class="nav-categoryes">
+      <h3 class="text-center">Категории</h3>
+      <ul class="nav-categoryes__list nav nav-pills nav-stacked">
+        <li class="nav-categoryes__item"><a href="shop.html" class="nav-categoryes__link">Замки для металической мебели</a></li>
+        <li class="nav-categoryes__item"><a href="shop.html" class="nav-categoryes__link">Ключи</a></li>
+        <li class="nav-categoryes__item"><a href="shop.html" class="nav-categoryes__link">Почтовые замки</a></li>
+        <li class="nav-categoryes__item"><a href="shop.html" class="nav-categoryes__link">Поворотно прижимные замки</a></li>
+        <li class="nav-categoryes__item"><a href="shop.html" class="nav-categoryes__link">Мебельные замки</a></li>
+        <li class="nav-categoryes__item"><a href="shop.html" class="nav-categoryes__link">Замки для электрошкафов</a></li>
+        <li class="nav-categoryes__item"><a href="shop.html" class="nav-categoryes__link">Замки для архивных шкафов</a></li>
+        <li class="nav-categoryes__item"><a href="shop.html" class="nav-categoryes__link">Монетные замки</a></li>
+        <li class="nav-categoryes__item"><a href="shop.html" class="nav-categoryes__link">Сейфовые замки</a></li>
+        <li class="nav-categoryes__item"><a href="shop.html" class="nav-categoryes__link">Поворотные рукояти</a></li>
+        <li class="nav-categoryes__item"><a href="shop.html" class="nav-categoryes__link">Замки для стекла</a></li>
+        <li class="nav-categoryes__item"><a href="shop.html" class="nav-categoryes__link">Защелки</a></li>
+        <li class="nav-categoryes__item"><a href="shop.html" class="nav-categoryes__link">Петли</a></li>
+        <li class="nav-categoryes__item"><a href="shop.html" class="nav-categoryes__link">Ручки</a></li>
+        <li class="nav-categoryes__item"><a href="shop.html" class="nav-categoryes__link">Уплотнитель</a></li>
+        <li class="nav-categoryes__item"><a href="shop.html" class="nav-categoryes__link">Метизы</a></li>
+      </ul>
+    </div>
+    <div id="overlay" class="overlay"></div>
+    <div class="container-fluid _padding-clear _position-fixed">
+      <div class="contact-nav">
+        <p class="contact-nav-item"><i class="fa fa-phone"></i>Тел: +38 093 655 44 33</p>
+        <p class="contact-nav-item"><i class="fa fa-mail-reply"></i>e-Mail: vashapochta@gmail.com</p><a href=""><i class="fa fa-facebook _white social-link"></i></a><a href=""><i class="fa fa-google _white social-link"></i></a><a href=""><i class="fa fa-linkedin _white social-link"></i></a>
+        <div class="_clearfix"></div>
+      </div>
+      <div class="container-fluide">
+        <div class="navbar navbar-default">
+          <div>
+            <nav class="navbar-header">
+              <h1 class="_margin-clear"><a href="index.html" class="navbar-brand">Основа-Маркет</a></h1>
+            </nav>
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav _padding-left">
+                <li id="dropside" class="dropdown"><a href="#">Каталог<i class="fa fa-arrow-down _margin-left-5"></i></a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="docs.html">Документация</a></li>
+                <li class="dropdown"><a href="news.html">Акции</a></li>
+                <li class="dropdown"><a href="docs.html">Скачать</a></li>
+                <li class="dropdown"><a href="docs.html">Документы</a></li>
+                <li class="dropdown"><a href="contacts.html">Контакты</a></li>
+              </ul>
+              <ul class="nav navbar-nav _margin-top _padding-left">
+                <li class="radial-buttons _margin-left"><i id="search" class="fa fa-search"></i>
+                  <div class="item-desc">
+                    <p>Поиск</p>
+                  </div>
+                  <div id="searchForm" class="search-form _display-none">
+                    <form>
+                      <input placeholder="Поиск по товарам">
+                    </form>
+                  </div>
+                </li>
+                <li class="radial-buttons _margin-left"><a href="cart.html" style="color: #fff; padding: 0 !important;"><i class="fa fa-shopping-cart"></i>
+                    <div class="item-desc">
+                      <p>Корзина</p>
+                    </div></a></li>
+                <li id="zayavka" class="radial-buttons _margin-left"><i class="fa fa-download"></i>
+                  <div class="item-desc">
+                    <p>Заявка на товар</p>
+                  </div>
+                  <div id="zayavkaForm" style="color: #393939" class="zayavka-wrap _display-none">
+                    <h3 style="color: #393939">Контактные данные</h3>
+                    <p style="margin-bottom: 0px !important">Фамилия Имя</p>
+                    <input placeholder="ФИО" style="margin-top: 0px !important">
+                    <p style="margin-bottom: 0px !important" class="_margin-top-5">Адресс электронной почты</p>
+                    <input placeholder="E-mail" style="margin-top: 0px !important">
+                    <p style="margin-bottom: 0px !important" class="_margin-top-5">Название товара</p>
+                    <input placeholder="Название товара" style="margin-top: 0px !important">
+                    <h3 style="color: #393939">
+                       
+                      Загрузите изображение
+                    </h3>
+                    <p style="color: #393939; float: left;">Файл не выбран</p>
+                    <button style="margin-left: 15px" class="btn btn-default">Загрузить</button>
+                    <button class="btn btn-info _margin-top-5">Отправить</button>
+                  </div>
+                </li>
+                <li class="radial-buttons _margin-left">
+                  <p>Рус</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="formOpen" class="call">
+      <div class="call-button"><i class="fa fa-phone"></i></div>
+      <div class="call-desc">
+        <p>Заказать обратный звонок</p>
+      </div>
+    </div>
+    <div id="formID" class="call-wrapper _display-none">
+      <div class="call-forms">
+        <div class="row">
+          <h3>Оставьте Ваши контактные данные и вам перезвонят</h3>
+        </div>
+        <div class="row _margin-top-double">
+          <input placeholder="Ваше имя">
+          <input placeholder="Номер телефона">
+        </div>
+        <div class="row _margin-top-double">
+          <col-md-6><a id="formOpen" href="#">Спасибо,не надо</a></col-md-6>
+          <col-md-6>
+            <button class="btn btn-default _float-right">Отправить</button>
+          </col-md-6>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="col-md-4">
+        <ul class="nav nav-pills nav-stacked gray side-list show-grid">
+          <li>
+            <h3 class="text-center">Категории</h3>
+          </li>
+          <li role="separator" class="divider"></li>
+          <li class="col-md-12">
+            <div class="clearfix">
+              <h4> <strong><a href="news_open.html">Заголовок новости</a></strong></h4>
+              <h6>Дата публикации: 1.01.02</h6>
+              <p class="show-grid clearfix"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, ex, alias! Voluptate, ipsa laboriosam ex illum saepe ducimus </p>
+              <!--.pull-lefta.btn.btn-default(href="news_open.html") Читать далее
+              -->
+            </div>
+            <!--.divider-->
+            <div class="clearfix">
+              <h4> <strong><a href="news_open.html">Заголовок новости</a></strong></h4>
+              <h6>Дата публикации: 1.01.02</h6>
+              <p class="show-grid clearfix"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, ex, alias! Voluptate, ipsa laboriosam ex illum saepe ducimus </p>
+              <!--.pull-lefta.btn.btn-default(href="news_open.html") Читать далее
+              -->
+            </div>
+            <!--.divider-->
+            <div class="clearfix">
+              <h4> <strong><a href="news_open.html">Заголовок новости</a></strong></h4>
+              <h6>Дата публикации: 1.01.02</h6>
+              <p class="show-grid clearfix"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, ex, alias! Voluptate, ipsa laboriosam ex illum saepe ducimus </p>
+              <!--.pull-lefta.btn.btn-default(href="news_open.html") Читать далее
+              -->
+            </div>
+            <!--.divider-->
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-8">
+        <h4> <strong>Заголовок новости</strong>
+          <h6>Дата публикации: 1.01.02</h6>
+          <p class="show-grid clearfix"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quod aperiam corporis facilis odit, ratione architecto natus maxime nisi iusto voluptates aspernatur accusamus enim id laudantium, fugit, modi accusantium ullam totam, eos aut rerum nesciunt! Consectetur tempora eius ex exercitationem quis. Suscipit iure obcaecati ab dolore incidunt consequuntur soluta doloremque, dolores numquam nulla possimus unde illum dolor velit inventore molestiae culpa eos cumque minima sint veritatis perspiciatis similique! Ratione, id explicabo eum officiis sit animi at, aut similique dolore eius adipisci deleniti eveniet fuga ut, odio laborum? Illo quis odio ut nemo modi maxime, quae repudiandae esse asperiores, neque, ea!</p>
+          <p class="show-grid clearfix"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quis molestias rem quos, numquam deleniti alias nostrum iusto ducimus minus maiores deserunt accusamus perspiciatis officia eius necessitatibus accusantium harum aspernatur possimus sapiente voluptatibus animi dolorum perferendis. Sint quibusdam ipsam aspernatur rerum velit architecto similique sapiente repellat eum, quisquam necessitatibus unde, illo. Architecto iste obcaecati sapiente! Quidem saepe explicabo fuga dignissimos itaque earum culpa expedita pariatur! Ratione, consequatur! Aliquid, temporibus, pariatur.</p>
+          <p class="show-grid clearfix"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat sit fuga fugit neque, vero laboriosam eligendi velit itaque beatae, dignissimos sint amet, quo reiciendis illo ab iusto porro et a adipisci quis? Voluptas dicta ratione sunt, voluptatibus obcaecati suscipit, porro minus quisquam, voluptatem tempore perferendis non amet rerum veritatis quam quaerat delectus magnam! Reiciendis minus eligendi dolores sit quas magni accusantium temporibus quos cupiditate amet harum fuga at officia alias soluta quo ut, blanditiis atque vero dicta provident, odio numquam dolor natus perferendis! Possimus eius, ipsa sed, ad architecto ea officiis rerum non sequi soluta esse recusandae quia nihil! Fugit assumenda esse saepe aliquid odit distinctio in beatae vel omnis sequi nesciunt iure architecto, quibusdam pariatur tenetur animi fuga aspernatur excepturi quidem ipsam dignissimos illum. Minima, optio! Ipsum autem consequuntur, quasi, assumenda repellat eveniet. Laudantium beatae quibusdam hic, dolorum mollitia asperiores reiciendis earum, repellendus eligendi numquam sunt repudiandae laboriosam labore veritatis doloribus. Libero velit laborum dolore alias, asperiores consectetur aliquid, voluptas rerum iusto minima labore dolorem inventore autem qui deserunt, pariatur cumque deleniti veniam illum. Id assumenda quis ex eos, in, quibusdam consectetur aliquid eum velit laborum fugiat possimus ut perferendis, ea odio! Animi aperiam ducimus maxime? Itaque sit, ipsum a perspiciatis, fugit accusantium vel necessitatibus eum ipsa culpa omnis minus. Asperiores facilis eum a, temporibus, omnis officiis velit similique. Molestiae sint dolorem, aperiam aut ab laborum ducimus aliquid corporis laboriosam deleniti officia expedita nostrum quam. Similique nostrum nesciunt distinctio ducimus excepturi iste repellat! Mollitia, earum delectus sed porro assumenda rerum adipisci quod quibusdam magni id accusantium omnis, esse illo totam quam a repellat nam, ratione reprehenderit! Blanditiis, debitis dignissimos labore repellendus animi in fugit quos cum expedita eveniet architecto quasi eius nobis doloremque iure aliquam maxime, ipsa laborum adipisci quo voluptatem obcaecati. Suscipit culpa saepe maiores nesciunt? Fugit quis perspiciatis, et ipsam, itaque dignissimos, soluta molestiae enim quas alias iste odit laboriosam vitae explicabo nulla, cupiditate voluptatum temporibus. Ipsum temporibus aliquam voluptatum adipisci, obcaecati, aut aliquid rerum velit aspernatur deserunt ullam sequi odit suscipit. Eaque natus eligendi eum harum accusamus repudiandae maxime quam ipsa explicabo temporibus hic, velit quia tenetur porro magni! Suscipit eligendi saepe voluptate, quis ipsum quia delectus quisquam error, sed eveniet. Deleniti earum numquam quasi tempore quibusdam repudiandae odit quam itaque veniam illo eos perferendis, vitae expedita laudantium! Dolorem eaque ratione itaque et optio ut quos, vitae quibusdam earum corrupti laudantium, obcaecati esse doloremque nihil tempora!</p>
+        </h4>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+          <h3>Подпишись!</h3>
+          <h5>На последние новости и акционные предложения</h5>
+        </div>
+        <h3 class="col-md-5">
+          <div class="row">
+            <div class="col-md-8 pull-left">
+              <input type="email" placeholder="E-mail" class="form-control">
+            </div>
+            <div class="pull-right"><a href="#" role="button" class="btn btn-default">Подписаться</a></div>
+          </div>
+        </h3>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row"> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d338651.7808910053!2d34.72017656116226!3d48.461958472777916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe303fd08468f%3A0xa1cf3d5f2c11aba!2z0JTQvdC10L_RgNC-0L_QtdGC0YDQvtCy0YHQuiwg0JTQvdC10L_RgNC-0L_QtdGC0YDQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1470744685513" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen=""> </iframe>
+          </div>
+        </div>
+        <div class="сol-md-6 col-md-offset-1 pull-left">
+          <h1 class="super-row"></h1>
+          <p>Украина, Харьков, улица Чего-то там, 5</p>
+          <p>Тел. +38 052 34 213 11</p>
+          <p>Mail pochta@gmail.com</p>
+          <h3>Обратная связь</h3>
+          <form class="clearfix">
+            <div class="form-group">
+              <input type="text" placeholder="ФИО" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <textarea rows="8" placeholder="Сообщение" class="form-control"></textarea>
+            </div>
+            <div class="pull-right">
+              <button type="submit" class="btn btn-default">Отправить</button>
+            </div>
+          </form>
+          <h3>Поделится сайтом в соцсетях</h3>
+          <div class="text-left"><i class="fa fa-facebook social-link pull-left fa-3x control"></i><i class="fa fa-google social-link pull-left fa-3x control"></i><i class="fa fa-linkedin social-link pull-left fa-3x control"></i></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

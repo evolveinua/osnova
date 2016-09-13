@@ -1,0 +1,23 @@
+extends includes/layout.jade
+
+block content
+  .container
+    .row 
+      -'use strict';
+      - var arr = []
+      - for (var i=0; i < 12;i++) { arr.push('')}
+      each name in arr
+        .col-sm-3.col-md-3
+          .thumbnail
+            //- img.img-responsive(src="http://placehold.it/400x300", alt="product.title")
+            .caption.clearfix
+              img.img-responsive(src="http://placehold.it/400x300", alt="product.title")
+              h4 
+                strong 
+                  a(href="http://ya.ru" target = "_blank") Название производителя
+              p.show-grid.clearfix  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, ex, alias! Voluptate, ipsa laboriosam ex illum saepe ducimus aperiam possimus excepturi, nihil atque dolorem molestiae aspernatur debitis, beatae! Veritatis, mollitia. 
+              .pull-left
+                h6 Размер: 15мб
+              .pull-right
+                a.btn.btn-default(href="pdf/demo.pdf") Загрузить
+    

@@ -1,0 +1,87 @@
+include ./sidebar.jade
+div.container-fluid._padding-clear._position-fixed
+  div.contact-nav
+  
+    p.contact-nav-item
+      i.fa.fa-location-arrow
+      | Харьков
+    p.contact-nav-item
+      i.fa.fa-phone
+      | Тел: +38 093 655 44 33
+    p.contact-nav-item
+      i.fa.fa-mail-reply
+      | e-Mail: vashapochta@gmail.com
+    
+    a(href="")
+      i.fa.fa-facebook._white.social-link
+    a(href="")
+      i.fa.fa-google._white.social-link
+    a(href="")
+      i.fa.fa-linkedin._white.social-link
+    div._clearfix
+    
+  div.container-fluide
+      div.navbar.navbar-default
+        div
+          nav.navbar-header
+            h1._margin-clear
+              a(href="index.html").navbar-brand
+                | Основа-Маркет
+          div.collapse.navbar-collapse
+            ul.nav.navbar-nav(style = "padding-left: 40px")
+              li.dropdown#dropside
+                a(href = "#")
+                  | Каталог
+                  i.fa.fa-arrow-down._margin-left-5
+
+              li
+                a(href="docs.html")
+                  | Производители
+              li.dropdown
+                a(href="acii.html")
+                  | Акции
+              li.dropdown
+                a(href="docs2.html")
+                  | Сертификаты
+              li.dropdown
+                a(href="contacts.html")
+                  | Контакты
+          
+            ul.nav.navbar-nav._margin-top._padding-left
+              li.radial-buttons._margin-left
+                i.fa.fa-search#search
+                div.item-desc
+                  p Поиск
+                div.search-form._display-none#searchForm
+                  form
+                    input(placeholder = "Поиск по товарам")
+              li.radial-buttons._margin-left
+                a(href="cart.html" style = "color: #fff; padding: 0 !important;")
+                  i.fa.fa-shopping-cart
+                  div.item-desc
+                    p Корзина
+              li.radial-buttons._margin-left#zayavka
+                i.fa.fa-download
+                div.item-desc
+                  p Заявка на товар
+                div.zayavka-wrap._display-none#zayavkaForm(style = "color: #393939")
+                  h3(style = "color: #393939")
+                    | Контактные данные
+                  p(style = "margin-bottom: 0px !important") Фамилия Имя
+                  input(placeholder = "ФИО" style = "margin-top: 0px !important")
+                  p._margin-top-5(style = "margin-bottom: 0px !important") Адресс электронной почты
+                  input(placeholder = "E-mail" style = "margin-top: 0px !important")
+                  p._margin-top-5(style = "margin-bottom: 0px !important") Название товара
+                  input(placeholder = "Название товара" style = "margin-top: 0px !important")
+                  h3(style = "color: #393939") 
+                    | Загрузите изображение
+                  p(style = "color: #393939; float: left;") Файл не выбран
+                  button.btn.btn-default(style = "margin-left: 15px") Загрузить
+                  button.btn.btn-info._margin-top-5 Отправить
+                  
+              li.radial-buttons._margin-left
+                p Рус
+                  
+                  
+        
+      

@@ -1,0 +1,79 @@
+extends includes/layout.jade
+
+block content
+  .container
+    .col-md-12
+      .row.super-row
+        div.col-md-6
+          img.product-in-img(src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300", alt="")
+          div.row._margin-top
+            div.col-md-4
+              img.product-in-img-2(src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300", alt="")
+            div.col-md-4
+              img.product-in-img-2(src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300", alt="")
+            div.col-md-4
+              img.product-in-img-2(src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97300&w=400&h=300", alt="")
+        div.col-md-6
+          h2 Название продукта, его наименование  
+          div.row
+            div.col-md-6
+              p 
+                strong Категория, Производитель
+            div.col-md-6(style = "text-align: right")
+              p Акртикул: 669
+          
+          h3._margin-top-double Полное Описание
+          p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla maiores consectetur voluptatum expedita perferendis, fugiat aspernatur soluta quia, enim quod dignissimos in possimus. Voluptates veritatis, alias cum tenetur reiciendis ad.
+          p._margin-top-double
+            strong
+              | Вес: 
+            | 5 кг
+          p
+            strong
+              | Динна: 
+            | 15 метров
+          p
+            strong
+              | Диаметр: 
+            | 3 метра
+          a(href="pdf/demo.pdf")
+            button.btn.btn-primary._margin-top-double Документация (PDF)
+          
+          div.row._margin-top-tripple
+            div.col-md-6
+              h3._margin-clear 2600 грн
+              p.not-have-this(style = "margin-top: 0px; margin-bottom: 0px !important") 
+                strong Нет в наличии
+            div.col-md-6
+              a(href="cart.html")
+                button.btn.btn-primary В корзину
+      .row.show-grid._margin-top-tripple
+        .col-md-12.gray
+          h3.text-center Смотрите также:
+            
+      .super-row
+        .bottom-slider
+          -'use strict';
+          - var arr = []
+          - for (var i=0; i < 6;i++) { arr.push('')}
+          each name in arr
+            .col-sm-12.col-md-4
+              .thumbnail
+                img.img-responsive(src="http://placehold.it/400x300", alt="product.title")
+                .caption
+                  a(href="product.html")
+                    h4 
+                      strong Крутой замок
+                  h6 Крутая компания, Англия
+                  p Краткое описание товара, разные бла-бла-бла-бла
+                  .clearfix
+                    strong.price 2500 грн
+                    div.row(style = "margin-top: 8px")
+                      div.col-md-6
+                        strong 
+                        a.btn.btn-default.pull-left(href='product.html', role='button') Подробнее 
+                      div.col-md-6
+                        strong 
+                          a.btn.btn-primary.pull-right(href='cart.html', role='button') В Корзину 
+
+

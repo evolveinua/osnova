@@ -1,0 +1,144 @@
+extends includes/layout.jade
+
+block content
+  .container
+    
+    .col-md-12
+      .row.super-row
+        div.row.cart-item
+          div.col-md-2
+            img.product-in-img-cart(src="http://placehold.it/400x300", alt="product.title")
+          div.col-md-5
+            h3 
+              | Название продукта, его наименование
+            strong 
+              | Артикул 644
+            br
+            a(href="shop.html")
+                | Категория 
+            a(href="shop.html")
+                |  Производитель
+          div.col-md-3.cart-counter-wrap
+            div.cart-counter
+              i.fa.fa-plus-circle.fa-2x
+              p.cart-count-info
+                | Добавить
+            div.cart-counter
+              i.fa.fa-minus-circle.fa-2x
+              p.cart-count-info
+                | Убрать
+            div.cart-counter
+              form
+                input(value ="3" style = "width: 45px; text-align: center;")
+          div.col-md-2
+            h2(style = "padding-top: 15px")
+              | 2600 грн
+        div.row.cart-item
+          div.col-md-2
+            img.product-in-img-cart(src="http://placehold.it/400x300", alt="product.title")
+          div.col-md-5
+            h3 
+              | Название продукта, его наименование
+            strong 
+              | Артикул 644
+            br
+            a(href="shop.html")
+                | Категория 
+            a(href="shop.html")
+                |  Производитель
+          div.col-md-3.cart-counter-wrap
+            div.cart-counter
+              i.fa.fa-plus-circle.fa-2x
+              p.cart-count-info
+                | Добавить
+            div.cart-counter
+              i.fa.fa-minus-circle.fa-2x
+              p.cart-count-info
+                | Убрать
+            div.cart-counter
+              form
+                input(value ="3" style = "width: 45px; text-align: center;")
+          div.col-md-2
+            h2(style = "padding-top: 15px")
+              | 2600 грн
+        
+        div.row.cart-item
+          div.col-md-2
+            img.product-in-img-cart(src="http://placehold.it/400x300", alt="product.title")
+          div.col-md-5
+            h3 
+              | Название продукта, его наименование
+            strong 
+              | Артикул 644
+            br
+            a(href="shop.html")
+                | Категория 
+            a(href="shop.html")
+                |  Производитель
+          div.col-md-3.cart-counter-wrap
+            div.cart-counter
+              i.fa.fa-plus-circle.fa-2x
+              p.cart-count-info
+                | Добавить
+            div.cart-counter
+              i.fa.fa-minus-circle.fa-2x
+              p.cart-count-info
+                | Убрать
+            div.cart-counter
+              form
+                input(value ="3" style = "width: 45px; text-align: center;")
+          div.col-md-2
+            h2(style = "padding-top: 15px")
+              | 2600 грн
+              
+        div.row._margin-top-tripple._cart-chekout
+          h2
+            | Для оформления заказа запоните, пожалуйста, следующие поля
+          p 
+            | Предоставленная Вами информация будет ипользована нами ТОЛЬКО для обработки вашего заказа
+          div.row._margin-top-tripple
+            div.col-md-6
+              
+              form
+                h4
+                  | Имя*
+                input.form-control(placeholder = "Имя")
+                h4
+                  | Телефон*
+                input.form-control(placeholder = "+38 (___) ___ __ __")
+                h4
+                  | Страна*
+                input.form-control(placeholder = "Украина")
+                h4
+                  | Улица
+                input.form-control(placeholder = "Лесная")
+              
+
+            div.col-md-6
+              form
+                h4
+                  | Фамилия*
+                input.form-control(placeholder = "Фамилия")
+                h4
+                  | E-mail*
+                input.form-control(placeholder = "vashapochta@some.com")
+                h4
+                  | Город*
+                input.form-control(placeholder = "Харьков")
+                h4
+                  | Номер дома
+                input.form-control(placeholder = "56")
+                
+              div.row._margin-top-double
+                div.col-md-9
+                div.col-md-1
+                  a(href="checkout.html")
+                    button.btn.btn-primary
+                      | Заказать
+                    
+              div.row._margin-top-tripple
+            
+            
+              
+      
+
